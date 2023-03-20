@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Login Page</title>
+    <style>
+        td{
+        padding:10px;
+        }
+        body{
+        background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+          <center style="padding:50px;"><h2><u>Log in to Your Account</u></h2></center>
+
+            <form action="login" method="post">
+              {% csrf_token %}
+                <table>
+                  <tr>
+                      <td><input type="text" name="username" placeholder="Enter your User Name" size="45"></td>
+                  </tr>
+                  <tr>
+                      <td><input type="password" name="password" placeholder="Enter your Password" size="45"></td>
+                  </tr>
+                  <tr>
+                      <td><center><input type="submit"></center></td>
+                  </tr>
+                </table>
+            </form>
+
+      </div>
+        <div class="col-sm-4"></div>
+  </div>
+</div>
+</body>
+</html>

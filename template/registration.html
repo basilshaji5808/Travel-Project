@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+  <style>
+  .button{
+    display: block;
+    width:70%;
+    background-color:blue;
+    color: white;
+    padding: 4px 6px;
+    font-size:16px;
+    text-align:center;
+    }
+  .demo{
+  background-color:skyblue;
+  padding:75px;
+  }
+    td{
+    padding:10px;
+    }
+  </style>
+</head>
+<body>
+<div class="demo">
+<form method="post" action="login_page.html">
+    <div>
+    <center style="padding:10px;"><h2><u>Registration Form</u></h2></center>
+<table style="width:50%">
+    <tr>
+      <td>
+      User Name
+      </td>
+      <td>
+        <input type="text" name="uname" placeholder="Enter your username">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Email
+      </td>
+      <td>
+        <input type="email" name="email" placeholder="Enter your E-mail">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Phone Number
+      </td>
+      <td>
+        <input type="text" name="Phonenumber" placeholder="Enter your Phone number">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Gender
+      </td>
+      <td>
+        <input type="radio" name="male">Male<input type="radio" name="female">Female<input type="radio" name="other">Other
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Password
+      </td>
+      <td>
+        <input type="password" name="password" placeholder="Enter your Password">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Confirm password
+      </td>
+      <td>
+        <input type="password" name="cpassword" placeholder="Re-enter your password">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="checkbox">I agree to these Terms and Conditions.
+      </td>
+    </tr>
+  <tr>
+    <td colspan="2">
+      <button class="button">SUBMIT</button>
+    </td>
+  </tr>
+</table>
+</form>
+</div>
+</body>
+</html>

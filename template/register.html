@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>register page</title>
+    <style>
+        td{
+        padding:10px;
+        }
+        body{
+        background-color:#66bb6a;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+          <center style="padding:50px;"><h2><u>Register Your Account</u></h2></center>
+            <form action="register" method="post">
+                {% csrf_token %}
+                <table>
+                    <tr><td>User Name</td>
+                        <td><input type="text" name="username" placeholder="Enter your User Name"></td>
+                    </tr>
+                    <tr><td>First Name</td>
+                        <td><input type="text" name="first_name" placeholder="Enter your First Name"></td>
+                    </tr>
+                    <tr><td>Last Name</td>
+                        <td><input type="text" name="last_name" placeholder="Enter your Last Name"></td>
+                    </tr>
+                    <tr><td>E-Mail ID</td>
+                        <td><input type="email" name="email" placeholder="Enter your Mail-ID"></td>
+                    </tr>
+                    <tr><td>Password</td>
+                        <td><input type="password" name="password" placeholder="Enter your Password"></td>
+                    </tr>
+                    <tr><td>Confirm Password</td>
+                        <td><input type="password" name="password1" placeholder="Enter Confirm Password"></td>
+                    </tr>
+                </table>
+                <center><input type="submit"></center>
+
+
+            </form>
+            <center>{% for msg in messages %}
+            {{msg}}
+            {% endfor %}
+            </center>
+          </div>
+        <div class="col-sm-4"></div>
+  </div>
+</div>
+</body>
+</html>
